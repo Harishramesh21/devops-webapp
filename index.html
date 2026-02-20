@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DevOps Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Web App - Updated!</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px; 
+            line-height: 1.6;
+            background-color: #f0f8ff;
+        }
+        h1 { color: #0366d6; }
+        .success { color: green; font-weight: bold; }
+        .timestamp { color: #666; font-size: 0.9em; }
+    </style>
 </head>
 <body>
-    <h1>Hello from DevOps Pipeline!</h1>
+    <h1>🚀 DevOps Pipeline Success!</h1>
     <p>This is a test deployment for my CI/CD assignment.</p>
+    <p class="success">✅ Auto-deployment working perfectly!</p>
+    <p>Deployed using: Git, GitHub Actions, Slack, and Netlify</p>
+    <p class="timestamp">Last updated: <span id="date"></span></p>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleString();
+    </script>
 </body>
-</html>
+</html>>
